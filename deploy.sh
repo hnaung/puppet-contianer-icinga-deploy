@@ -14,7 +14,7 @@ wget -qO- https://get.docker.com/ | sh
 docker pull mysql
 
 # run the container on top of the image
-docker run -p 3900:3306 --name mysql -e MYSQL_ROOT_PASSWORD=toor -d mysql:latest
+docker run -p 3900:3306 --name mysql -e MYSQL_ROOT_PASSWORD=ubuntu -d mysql:latest
 
 git clone https://github.com/eazeved0/test-deploy.git && cd test-deploy && docker build -t test-deploy/local:apache .
 
