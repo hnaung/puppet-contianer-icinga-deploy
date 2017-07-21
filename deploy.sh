@@ -16,7 +16,7 @@ docker pull mysql
 # run the container on top of the image
 docker run -p 3900:3306 --name mysql -e MYSQL_ROOT_PASSWORD=ubuntu -d mysql:latest
 
-git clone https://github.com/eazeved0/test-deploy.git && cd test-deploy && docker build -t test-deploy/local:apache .
+git clone git@github.com:hnaung/puppet-contianer-icinga-deploy.git && cd puppet-contianer-icinga-deploy && docker build -t puppet-contianer-icinga-deploy/local:apache .
 
 docker run -d -p 80:80 --name apache --link mysql:mysql -v /var/www/html:/var/www/html test-deploy/local:apache
 
