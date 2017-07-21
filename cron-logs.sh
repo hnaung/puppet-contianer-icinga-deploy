@@ -13,4 +13,4 @@ fi
 docker cp $APACHE:/var/log/apache2 $LOGS
 docker cp $MYSQL:/var/log/mysql $LOGS
 
-aws s3 sync /var/log/containers/ s3://icinga-deploy-hnaung --region us-east-1
+aws s3 sync /var/log/containers/ s3://icinga-deploy-hnaung --region ap-southeast-2
