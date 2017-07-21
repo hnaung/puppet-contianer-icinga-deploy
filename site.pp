@@ -8,7 +8,7 @@ define host{
         use                     generic-host
         host_name               remote
         alias                   remote
-        address         10.0.0.52
+        address         10.0.0.6
         }
 define service {
         use                     generic-service
